@@ -23,41 +23,8 @@ def find_max_sales():
 
 find_max_sales()
 
-#problem 2
-#input numbers until user enters 0 then find range
-#initialize an empty list to hold numbers
-def find_range_of_numbers():
-    numbers = []
-    #Encourage the user to keep entering numbers until they enter zero
-    while True:
-        value= float(input("Enter a value (or 0 to end): "))
-        if value == 0:
-            break
-        else:
-            numbers.append(value)
 
-    #display the list of numbers entered
-    print(numbers)
-    #Determine the range if the list isn't empty
-    if len(numbers) > 0:
-        max_num = numbers[0]
-        min_num = numbers[0]
 
-        #find max and min
-        for num in numbers:
-            if num > max_num:
-                max_num = num
-            elif num < min_num:
-                min_num = num
-
-        #compute range
-        num_range = max_num - min_num
-        #display the range using f string
-        print(f"Range = {num_range}")
-    else:
-        print("No numbers found")
-
-find_range_of_numbers()
 
 
 
